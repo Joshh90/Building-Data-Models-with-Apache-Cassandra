@@ -112,7 +112,7 @@ session = cluster.connect()
 # In[17]:
 
 
-# TO-DO: Create a Keyspace
+# #### Create a Keyspace
 try:
     session.execute("""
     CREATE KEYSPACE IF NOT EXISTS new_sparkify
