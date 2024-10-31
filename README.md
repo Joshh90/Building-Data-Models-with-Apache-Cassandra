@@ -3,7 +3,8 @@
 Sparkify, a music streaming startup, wants insights into their user listening behavior. Currently, data is stored in CSV files, making querying difficult. They need an Apache Cassandra database to enable efficient song play queries. As a data engineer, I designed a data model to support the analysis team in generating valuable insights.
 
 ### About dataset
-This dataset contains information about Sparkify,a startup that want to analyze the data they've been collecting on songs and user activity on their new music streaming app
+This dataset contains information about Sparkify,a startup that want to analyze the data they've been collecting on songs and user activity on their new music streaming app.
+[Dataset link](https://github.com/Joshh90/data-modeling-with-apache-cassandra-project/blob/main/event_datafile_new.csv)
 
 
 ### Diagram
@@ -27,3 +28,5 @@ import numpy as np
 import json
 import csv
  ```
+### Project Execution Flow
+Dataset extraction from jupyter notebook working directory --> Pre-process data with Python --> Create cassandra instance cluster --> Create keyspace in cassandra --> Set keyspace in cassandra --> Modelling the database tables based on queries -->Insert data into the database table --> Query the table to gain insight
