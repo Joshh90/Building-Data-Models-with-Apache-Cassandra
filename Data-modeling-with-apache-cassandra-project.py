@@ -69,7 +69,7 @@ csv.register_dialect('myDialect', quoting=csv.QUOTE_ALL, skipinitialspace=True)
 
 with open('event_datafile_new.csv', 'w', encoding = 'utf8', newline='') as f:
     writer = csv.writer(f, dialect='myDialect')
-    writer.writerow(['artist','firstName','gender','itemInSession','lastName','length',                'level','location','sessionId','song','userId'])
+    writer.writerow(['artist','firstName','gender','itemInSession','lastName','length','level','location','sessionId','song','userId'])
     for row in full_data_rows_list:
         if (row[0] == ''):
             continue
@@ -378,7 +378,7 @@ except Exception as e:
 # #### Explanation:
 # #### Partition Key: song and userId – Allows us to efficiently query by song by song title and userId, which is the main filter criterion.
 # #### Composite primary key: song, userId – Ensure uniqueness and ordering within each song partition, allowing retrieval of users who listened to a particular song.
-# #### This design is optimized for querying by song title, retrieving all users associated with a specific song.
+# #### This design is optimized for querying by song title and userId retrieving all users associated with a specific song.
 
 # ### Droping the tables before closing out the sessions
 
