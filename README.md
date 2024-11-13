@@ -32,4 +32,4 @@ import json
 import csv
  ```
 ### Project Execution Flow
-Dataset extraction from jupyter notebook working directory --> Pre-process data with Python --> Create cassandra instance cluster --> Create keyspace in cassandra --> Set keyspace in cassandra --> Modelling the database tables based on queries -->Insert data into the database table --> Query the table to gain insight
+Data upload to jupyter notebook working directory --> Dataset extraction from jupyter notebook working directory --> Pre-process data with Python --> Create cassandra instance cluster --> Create keyspace in cassandra --> Set keyspace in cassandra --> Modelling the database tables based on queries -->Insert data into the database table --> Query the table to gain insight
