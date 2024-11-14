@@ -1,12 +1,12 @@
-# Data Modeling With Apache Cassandra-project
+# Building Data Models with Apache Cassandra
 ## Description:
-Sparkify, a music streaming startup, wants insights into their user listening behavior. Currently, data is stored in CSV files, making querying difficult. They need an Apache Cassandra database to enable efficient song play queries. As a data engineer, I designed a data model to support the analysis team in generating valuable insights.
+Mobax, a music streaming startup, wants insights into their user listening behavior. Currently, data is stored in CSV files, making querying difficult. They need an Apache Cassandra database to enable efficient song play queries. As a data engineer, I designed a data model to support the analysis team in generating valuable insights.
 
 ### Diagram
 ![Diagram](https://github.com/Joshh90/data-modeling-with-apache-cassandra-project/blob/main/Cassandra_logo.svg)
 
 ### About dataset
-This dataset contains information about Sparkify,a startup that want to analyze the data they've been collecting on songs and user activity on their new music streaming app.
+This dataset contains information about Mobax,a startup that want to analyze the data they've been collecting on songs and user activity on their new music streaming app.
 [Dataset link](https://github.com/Joshh90/data-modeling-with-apache-cassandra-project/blob/main/event_datafile_new.csv)
 
 ### Screenshot of denormalized event_datafile_new.csv dataset
