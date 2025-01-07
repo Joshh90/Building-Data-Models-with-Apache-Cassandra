@@ -69,7 +69,7 @@ csv.register_dialect('myDialect', quoting=csv.QUOTE_ALL, skipinitialspace=True)
 
 with open('event_datafile_new.csv', 'w', encoding = 'utf8', newline='') as f:
     writer = csv.writer(f, dialect='myDialect')
-    writer.writerow(['artist','firstName','gender','itemInSession','lastName','length',                'level','location','sessionId','song','userId'])
+    writer.writerow(['artist','firstName','gender','itemInSession','lastName','length','level','location','sessionId','song','userId'])
     for row in full_data_rows_list:
         if (row[0] == ''):
             continue
