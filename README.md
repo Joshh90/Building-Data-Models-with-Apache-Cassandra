@@ -38,3 +38,5 @@ Data upload to jupyter notebook working directory --> Dataset extraction from ju
  **Partition Key:** (userId, sessionId) – This composite partition key allows us to group data by both userId and sessionId, which is necessary for efficiently retrieving songs a user listened to in a specific session.
  
 **Clustering Key:** itemInSession – This ensures the songs are sorted by itemInSession within each userId and sessionId group, which aligns with the query requirement to retrieve songs in the order they were listened to.
+
+#### N.B: I modelled the database tables on the queries I want to run
