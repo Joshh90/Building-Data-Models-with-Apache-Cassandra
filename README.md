@@ -32,4 +32,9 @@ import json
 import csv
  ```
 ### Project Execution Flow
-Data upload to jupyter notebook working directory --> Dataset extraction from jupyter notebook working directory --> Pre-process data with Python --> Create cassandra instance cluster --> Create keyspace in cassandra --> Set keyspace in cassandra --> Modelling the database tables based on queries -->Insert data into the database table --> Query the table to gain insight
+Data upload to jupyter notebook working directory --> Dataset extraction from jupyter notebook working directory --> Pre-process data with Python --> Create cassandra instance cluster --> Create keyspace in cassandra --> Set keyspace in cassandra --> Modelling the database tables based on queries -->Insert data into the database table --> Query the table to gain insight.
+
+#### Explanation of some key portion of the code:
+ **Partition Key:** (userId, sessionId) – This composite partition key allows us to group data by both userId and sessionId, which is necessary for efficiently retrieving songs a user listened to in a specific session.
+ 
+**Clustering Key:** itemInSession – This ensures the songs are sorted by itemInSession within each userId and sessionId group, which aligns with the query requirement to retrieve songs in the order they were listened to.
